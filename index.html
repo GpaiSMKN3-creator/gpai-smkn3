@@ -25,12 +25,12 @@
         </div>
     </div>
 
-    <!-- STICKY NAVBAR DENGAN LOGO SEKOLAH -->
+    <!-- STICKY NAVBAR -->
     <nav class="bg-emerald-900/95 backdrop-blur-md text-white sticky top-0 z-50 shadow-md border-b border-emerald-800">
         <div class="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between">
             <div class="flex items-center gap-3">
-                <!-- LOGO SMKN 3 BANJARMASIN -->
-                <img src="https://smkn3-bjm.sch.id/wp-content/uploads/2021/04/cropped-logo-smk3-1.png" alt="Logo SMKN 3 Banjarmasin" class="w-10 h-10 object-contain bg-white p-1 rounded-xl shadow-md">
+                <!-- LOGO SMKN 3 BANJARMASIN (Aman HTTPS) -->
+                <img src="https://images.weserv.nl/?url=smkn3-bjm.sch.id/wp-content/uploads/2021/04/cropped-logo-smk3-1.png" alt="Logo SMKN 3 Banjarmasin" class="w-10 h-10 object-contain bg-white p-1 rounded-xl shadow-md">
                 <div>
                     <span class="font-extrabold text-base block tracking-tight leading-none text-amber-400">PORTAL GPAI</span>
                     <span class="text-[10px] text-emerald-200 font-medium tracking-wide">SMKN 3 BANJARMASIN</span>
@@ -43,27 +43,27 @@
         </div>
     </nav>
 
-    <!-- HERO SECTION -->
-    <header class="relative bg-gradient-to-b from-emerald-900 to-teal-800 text-white pt-16 pb-24 px-4 text-center overflow-hidden">
-        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-full opacity-10 pointer-events-none">
-            <div class="absolute top-10 left-10 w-40 h-40 rounded-full bg-amber-400 blur-3xl"></div>
-            <div class="absolute bottom-10 right-10 w-40 h-40 rounded-full bg-teal-300 blur-3xl"></div>
-        </div>
+    <!-- HERO SECTION DENGAN LATAR BELAKANG GAMBAR SMKN 3 -->
+    <header class="relative text-white py-24 px-4 text-center bg-cover bg-center overflow-hidden" style="background-image: url('https://images.weserv.nl/?url=smkn3-bjm.sch.id/wp-content/uploads/2021/04/Gedung-Depan-SMK3-scaled.jpg');">
+        
+        <!-- Lapisan Gelap/Hijau Transparan agar Teks Terbaca Jelas -->
+        <div class="absolute inset-0 bg-gradient-to-b from-emerald-950/90 to-teal-900/85 backdrop-blur-[2px]"></div>
+
         <div class="max-w-2xl mx-auto relative z-10">
-            <span class="inline-flex items-center gap-1.5 bg-emerald-800/60 border border-emerald-700/50 text-emerald-300 text-[11px] uppercase tracking-wider font-bold px-3 py-1 rounded-full mb-4 backdrop-blur-sm">
+            <span class="inline-flex items-center gap-1.5 bg-emerald-800/80 border border-emerald-700/50 text-emerald-300 text-[11px] uppercase tracking-wider font-bold px-3 py-1 rounded-full mb-4 backdrop-blur-sm">
                 <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse"></span> Sistem Informasi Keagamaan Digital
             </span>
             <h1 class="text-3xl md:text-5xl font-extrabold mb-4 tracking-tight leading-tight">
                 Membangun Karakter <br><span class="bg-gradient-to-r from-amber-300 to-yellow-400 bg-clip-text text-transparent">Unggul & Berakhlak</span>
             </h1>
-            <p class="text-sm md:text-base text-emerald-100/80 max-w-xl mx-auto leading-relaxed">
+            <p class="text-sm md:text-base text-emerald-100/90 max-w-xl mx-auto leading-relaxed font-medium">
                 Wadah monitoring amalan sholat harian dan kendali target hafalan Al-Qur'an bagi seluruh siswa/siswi SMKN 3 Banjarmasin.
             </p>
         </div>
     </header>
 
     <!-- FLOATING STATS CARD SECTION -->
-    <section class="max-w-4xl mx-auto px-4 -mt-12 relative z-20">
+    <section class="max-w-4xl mx-auto px-4 -mt-10 relative z-20">
         <div class="bg-white rounded-2xl shadow-xl shadow-slate-200/80 border border-slate-100 p-4 grid grid-cols-3 gap-2 text-center">
             <div class="p-2 border-r border-slate-100">
                 <div class="text-xl font-extrabold text-emerald-800">9</div>
@@ -115,7 +115,7 @@
         </section>
     </main>
 
-    <!-- SEKSI BARU: GALERI FOTO KEGIATAN -->
+    <!-- DOKUMENTASI KEGIATAN KEAGAMAAN -->
     <section id="kegiatan" class="max-w-4xl mx-auto px-4 pb-16">
         <h3 class="text-xl font-bold mb-6 text-slate-900 flex items-center gap-2">
             <span class="w-1.5 h-6 bg-emerald-700 rounded-full"></span> Dokumentasi Kegiatan Keagamaan
@@ -125,7 +125,7 @@
             <!-- Foto Kegiatan 1 -->
             <div class="bg-white p-3 rounded-2xl shadow-sm border border-slate-100">
                 <div class="aspect-video w-full rounded-xl overflow-hidden bg-slate-200 mb-3">
-                    <img src="https://smkn3-bjm.sch.id/wp-content/uploads/2023/10/banner-web-smk3-1024x576.jpg" alt="Kegiatan SMKN 3 Banjarmasin" class="w-full h-full object-cover">
+                    <img src="https://images.weserv.nl/?url=smkn3-bjm.sch.id/wp-content/uploads/2023/10/banner-web-smk3-1024x576.jpg" alt="Kegiatan SMKN 3 Banjarmasin" class="w-full h-full object-cover">
                 </div>
                 <p class="text-xs font-bold text-slate-700">Peringatan Hari Besar Islam (PHBI)</p>
                 <p class="text-[11px] text-slate-400 mt-0.5">Membentuk lingkungan sekolah yang agamis dan harmonis.</p>
@@ -134,8 +134,7 @@
             <!-- Foto Kegiatan 2 -->
             <div class="bg-white p-3 rounded-2xl shadow-sm border border-slate-100">
                 <div class="aspect-video w-full rounded-xl overflow-hidden bg-slate-200 mb-3">
-                    <!-- TEMPAT FOTO KEDUA: Anda bisa ganti link src di bawah ini nanti -->
-                    <img src="https://smkn3-bjm.sch.id/wp-content/uploads/2021/04/Gedung-Depan-SMK3-scaled.jpg" alt="Lingkungan SMKN 3 Banjarmasin" class="w-full h-full object-cover">
+                    <img src="https://images.weserv.nl/?url=smkn3-bjm.sch.id/wp-content/uploads/2021/04/Gedung-Depan-SMK3-scaled.jpg" alt="Lingkungan SMKN 3 Banjarmasin" class="w-full h-full object-cover">
                 </div>
                 <p class="text-xs font-bold text-slate-700">Pembiasaan Karakter Mulia di Sekolah</p>
                 <p class="text-[11px] text-slate-400 mt-0.5">Sholat dhuha dan dzikir bersama berkala sebelum jam produktif.</p>
@@ -143,7 +142,7 @@
         </div>
     </section>
 
-    <!-- PREMIUM FOOTER -->
+    <!-- FOOTER -->
     <footer class="bg-slate-900 text-slate-500 text-center py-8 text-xs border-t border-slate-800">
         <p class="font-semibold text-slate-400">© 2026 Tim Agama Islam SMKN 3 Banjarmasin</p>
         <p class="text-[10px] text-slate-600 mt-1">Membentuk Lulusan Profesional yang Kompeten dan Berkarakter Islami</p>
