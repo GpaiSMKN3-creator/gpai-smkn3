@@ -3,69 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal GPAI SMKN 3 Banjarmasin</title>
+    <title>Portal Agama - SMKN 3 Banjarmasin</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
+<body class="bg-slate-50 text-slate-800 antialiased">
 
-    <nav class="bg-green-700 text-white sticky top-0 z-50 shadow-md">
-        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+    <div class="bg-amber-500 text-amber-950 text-xs font-bold py-1.5 px-4 overflow-hidden border-b border-amber-600/20">
+        <div class="animate-marquee whitespace-nowrap inline-block">
+            📢 PENGUMUMAN: Bagi siswa Kelas XII yang sedang Magang / PKL, setoran hafalan Juz Amma wajib dicicil mingguan via menu upload di bawah ini! Tetap jaga sholat 5 waktu di tempat kerja.
+        </div>
+    </div>
+
+    <nav class="bg-emerald-900/95 backdrop-blur-md text-white sticky top-0 z-50 shadow-md border-b border-emerald-800">
+        <div class="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between">
             <div class="flex items-center gap-3">
-                <div class="bg-white p-1 rounded-full text-green-700 w-10 h-10 flex items-center justify-center font-bold text-xl">S3</div>
+                <div class="bg-gradient-to-tr from-amber-400 to-amber-300 p-1 rounded-xl text-emerald-900 w-10 h-10 flex items-center justify-center font-extrabold text-lg shadow-md shadow-amber-500/20">
+                    S3
+                </div>
                 <div>
-                    <span class="font-bold text-base block leading-none">GPAI</span>
-                    <span class="text-xs text-green-200">SMKN 3 Banjarmasin</span>
+                    <span class="font-extrabold text-base block tracking-tight leading-none text-amber-400">PORTAL GPAI</span>
+                    <span class="text-[10px] text-emerald-200 font-medium tracking-wide">SMKN 3 BANJARMASIN</span>
                 </div>
             </div>
-            <div class="flex space-x-3 text-sm font-medium">
-                <a href="#absensi" class="hover:text-green-200">Absensi</a>
-                <a href="#hafalan" class="hover:text-green-200">Juz Amma</a>
+            <div class="flex space-x-1 bg-emerald-950 p-1 rounded-lg border border-emerald-800 text-xs font-semibold">
+                <a href="#absensi" class="px-3 py-1.5 rounded-md text-emerald-200 hover:text-white transition">Absensi</a>
+                <a href="#hafalan" class="bg-emerald-800 px-3 py-1.5 rounded-md text-white shadow-sm">Juz Amma</a>
             </div>
         </div>
     </nav>
 
-    <header class="bg-gradient-to-br from-green-800 to-emerald-600 text-white py-16 px-4 text-center">
-        <div class="max-w-3xl mx-auto">
-            <h1 class="text-2xl md:text-4xl font-extrabold mb-3">Portal Digital Keagamaan</h1>
-            <p class="text-sm md:text-base text-emerald-100 opacity-90">Sistem terpadu untuk absensi sholat harian dan monitoring setoran hafalan Juz Amma siswa SMKN 3 Banjarmasin.</p>
+    <header class="relative bg-gradient-to-b from-emerald-900 to-teal-800 text-white pt-16 pb-24 px-4 text-center overflow-hidden">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-full opacity-10 pointer-events-none">
+            <div class="absolute top-10 left-10 w-40 h-40 rounded-full bg-amber-400 blur-3xl"></div>
+            <div class="absolute bottom-10 right-10 w-40 h-40 rounded-full bg-teal-300 blur-3xl"></div>
+        </div>
+
+        <div class="max-w-2xl mx-auto relative z-10">
+            <span class="inline-flex items-center gap-1.5 bg-emerald-800/60 border border-emerald-700/50 text-emerald-300 text-[11px] uppercase tracking-wider font-bold px-3 py-1 rounded-full mb-4 backdrop-blur-sm">
+                <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse"></span> Sistem Informasi Keagamaan Digital
+            </span>
+            <h1 class="text-3xl md:text-5xl font-extrabold mb-4 tracking-tight leading-tight">
+                Membangun Karakter <br><span class="bg-gradient-to-r from-amber-300 to-yellow-400 bg-clip-text text-transparent">Unggul & Berakhlak</span>
+            </h1>
+            <p class="text-sm md:text-base text-emerald-100/80 max-w-xl mx-auto leading-relaxed">
+                Wadah monitoring amalan sholat harian dan kendali target hafalan Al-Qur'an bagi seluruh siswa/siswi SMKN 3 Banjarmasin.
+            </p>
         </div>
     </header>
 
-    <main class="max-w-6xl mx-auto p-4 grid grid-cols-1 md:grid-cols-2 gap-6 py-10">
-        
-        <section id="absensi" class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between">
-            <div>
-                <div class="w-12 h-12 bg-amber-100 text-amber-700 rounded-xl flex items-center justify-center text-xl mb-4">
-                    <i class="fa-solid fa-clock"></i>
-                </div>
-                <h3 class="text-xl font-bold mb-2 text-gray-900">Absensi Sholat Harian</h3>
-                <p class="text-gray-600 text-sm mb-6 leading-relaxed">Silakan isi laporan kehadiran sholat berjamaah di sekolah maupun jurnal amalan sholat lima waktu di rumah.</p>
+    <section class="max-w-4xl mx-auto px-4 -mt-12 relative z-20">
+        <div class="bg-white rounded-2xl shadow-xl shadow-slate-200/80 border border-slate-100 p-4 grid grid-cols-3 gap-2 text-center">
+            <div class="p-2 border-r border-slate-100">
+                <div class="text-xl font-extrabold text-emerald-800">9</div>
+                <div class="text-[10px] text-slate-400 font-medium uppercase tracking-wider">Jurusan</div>
             </div>
-            <a href="#" target="_blank" class="block w-full text-center bg-amber-600 text-white py-3 rounded-lg font-bold hover:bg-amber-700 transition shadow-sm text-sm">
-                <i class="fa-solid fa-user-check mr-2"></i> Buka Link Absensi Sholat
+            <div class="p-2 border-r border-slate-100">
+                <div class="text-xl font-extrabold text-amber-600">Juz 30</div>
+                <div class="text-[10px] text-slate-400 font-medium uppercase tracking-wider">Target Utama</div>
+            </div>
+            <div class="p-2">
+                <div class="text-xl font-extrabold text-emerald-800">100%</div>
+                <div class="text-[10px] text-slate-400 font-medium uppercase tracking-wider">Digital</div>
+            </div>
+        </div>
+    </section>
+
+    <main class="max-w-4xl mx-auto p-4 py-12 grid grid-cols-1 md:grid-cols-2 gap-6">
+        
+        <section id="absensi" class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-all duration-300 flex flex-col justify-between group relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-24 h-24 bg-amber-500/5 rounded-full translate-x-6 -translate-y-6 group-hover:scale-110 transition-transform"></div>
+            <div>
+                <div class="w-12 h-12 bg-amber-50 text-amber-600 rounded-xl flex items-center justify-center text-xl mb-4 font-bold shadow-sm border border-amber-100">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                </div>
+                <h3 class="text-lg font-bold mb-1.5 text-slate-900 group-hover:text-emerald-800 transition-colors">Absensi Sholat Berkala</h3>
+                <p class="text-slate-500 text-xs leading-relaxed mb-6">
+                    Catat kehadiran Sholat Dhuha harian, Zuhur berjamaah di sekolah, ataupun rekap mandiri jurnal ibadah rumah selama libur/PKL.
+                </p>
+            </div>
+            <a href="#" target="_blank" class="block w-full text-center bg-amber-500 text-amber-950 py-3 rounded-xl font-bold hover:bg-amber-600 hover:text-black transition-all shadow-md shadow-amber-500/10 text-sm">
+                <i class="fa-solid fa-user-check mr-1.5"></i> Isi Absensi Sholat Sekarang
             </a>
         </section>
 
-        <section id="hafalan" class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between">
+        <section id="hafalan" class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-all duration-300 flex flex-col justify-between group relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-24 h-24 bg-emerald-500/5 rounded-full translate-x-6 -translate-y-6 group-hover:scale-110 transition-transform"></div>
             <div>
-                <div class="w-12 h-12 bg-green-100 text-green-700 rounded-xl flex items-center justify-center text-xl mb-4">
-                    <i class="fa-solid fa-book-quran"></i>
+                <div class="w-12 h-12 bg-emerald-50 text-emerald-600 rounded-xl flex items-center justify-center text-xl mb-4 font-bold shadow-sm border border-emerald-100">
+                    <i class="fa-solid fa-graduation-cap"></i>
                 </div>
-                <h3 class="text-xl font-bold mb-2 text-gray-900">Setoran Hafalan Juz Amma</h3>
-                <p class="text-gray-600 text-sm mb-6 leading-relaxed">Gunakan menu ini untuk mengunggah rekaman suara atau video setoran hafalan mandiri Anda (khususnya saat magang/PKL).</p>
+                <h3 class="text-lg font-bold mb-1.5 text-slate-900 group-hover:text-emerald-800 transition-colors">Setoran Hafalan Juz Amma</h3>
+                <p class="text-slate-500 text-xs leading-relaxed mb-6">
+                    Kirim berkas rekaman suara atau video ujian hafalan surah-surah pendek Anda secara digital langsung ke database Guru PAI.
+                </p>
             </div>
-            <a href="#" target="_blank" class="block w-full text-center bg-green-700 text-white py-3 rounded-lg font-bold hover:bg-green-800 transition shadow-sm text-sm">
-                <i class="fa-solid fa-cloud-arrow-up mr-2"></i> Upload Rekaman Hafalan
+            <a href="#" target="_blank" class="block w-full text-center bg-emerald-800 text-white py-3 rounded-xl font-bold hover:bg-emerald-900 transition-all shadow-md shadow-emerald-800/10 text-sm">
+                <i class="fa-solid fa-cloud-arrow-up mr-1.5"></i> Upload File Setoran Hafalan
             </a>
         </section>
 
     </main>
 
-    <footer class="bg-gray-900 text-gray-500 text-center py-6 text-xs border-t border-gray-800 mt-12">
-        <p>© 2026 GPAI SMKN 3 Banjarmasin. All rights reserved.</p>
+    <section class="max-w-4xl mx-auto px-4 pb-12 text-center text-xs text-slate-400">
+        <div class="bg-slate-100 rounded-xl p-4 border border-slate-200/60 inline-flex items-center gap-2 text-left">
+            <i class="fa-solid fa-circle-info text-emerald-700 text-sm"></i>
+            <span><strong>Informasi:</strong> Data yang diisi siswa akan otomatis terkelompok secara rapi per jurusan dan per tingkatan kelas pada sistem rekap Guru Agama.</span>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-slate-500 text-center py-8 text-xs border-t border-slate-800">
+        <p class="font-semibold text-slate-400">© 2026 Tim Agama Islam SMKN 3 Banjarmasin</p>
+        <p class="text-[10px] text-slate-600 mt-1">Membentuk Lulusan Profesional yang Kompeten dan Berkarakter Islami</p>
     </footer>
+
+    <style>
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        .animate-marquee {
+            animation: marquee 25s linear infinite;
+        }
+        .animate-marquee:hover {
+            animation-play-state: paused; /* Teks berhenti jalan jika disentuh/kursor di atasnya */
+        }
+    </style>
 
 </body>
 </html>
-
